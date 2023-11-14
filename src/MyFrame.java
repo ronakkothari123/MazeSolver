@@ -3,8 +3,6 @@ import Components.MyTextField;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class MyFrame extends JFrame{
 
@@ -35,6 +33,12 @@ public class MyFrame extends JFrame{
         panel.add(myTextField2);
 
         this.pack();
+
+        ImageIcon img = new ImageIcon("res/icon.png");
+
+
+
+        this.setIconImage(img.getImage());
 
         this.setLocationRelativeTo(null);
         this.setResizable(false);

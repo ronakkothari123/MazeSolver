@@ -10,8 +10,5 @@ public class MyPanel extends JPanel {
 
     public void paint(Graphics graphics){
         Graphics2D g = (Graphics2D) graphics;
-
-        g.setColor(Color.BLUE);
-        g.fillRect(0,0,40,40);
     }
 }

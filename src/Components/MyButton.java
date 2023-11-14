@@ -11,6 +11,7 @@ public class MyButton extends JButton {
         this.setBackground(bgc);
         this.setForeground(tc);
         this.setBorderPainted(false);
+
         this.setFont(new Font("Arial", Font.PLAIN, fs));
         this.setFocusable(false);
     }

@@ -10,8 +10,8 @@ public class MyFrame extends JFrame{
     public final MyTextField myTextField;
     public final MyTextField myTextField2;
     public final MyButton myButton;
-
-
+    public final MyButton myButton2;
+    
     public MyFrame(int width, int height) {
         panel = new MyPanel(width, height);
 
@@ -24,13 +24,18 @@ public class MyFrame extends JFrame{
 
         myButton = new MyButton(new Dimension(300, 40), "Generate Maze", Color.BLACK, Color.WHITE, 12);
         myButton.addActionListener(e -> {
-            System.out.println("Button is clicked");
             Main.generateMaze();
+        });
+
+        myButton2 = new MyButton(new Dimension(300, 40), "Solve Maze", Color.BLACK, Color.WHITE, 12);
+        myButton2.addActionListener(e -> {
+            // Solve Maze Algorithm
         });
 
         panel.add(myButton);
         panel.add(myTextField);
         panel.add(myTextField2);
+        panel.add(myButton2);
 
         this.pack();
 

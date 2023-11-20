@@ -46,7 +46,7 @@ public class MyFrame extends JFrame{
         this.setIconImage(img.getImage());
 
         this.setLocationRelativeTo(null);
-        this.setResizable(false);
+        //this.setResizable(false);
         this.setVisible(true);
     }
 }

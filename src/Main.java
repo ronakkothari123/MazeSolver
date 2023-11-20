@@ -17,6 +17,7 @@ public class Main implements Runnable {
     private static LinkedList<Cell> queue = new LinkedList<>();
     private static Cell[][] predecessors;
 
+    private static final int REFRESH_RATE = 35;
     private static final int x = 0;
 
 
@@ -67,7 +68,7 @@ public class Main implements Runnable {
                 exploreNeighbors(current);
                 render(frame.panel.getGraphics());
                 try {
-                    Thread.sleep(35);
+                    Thread.sleep(REFRESH_RATE);
                 } catch (InterruptedException e) {
                     System.out.println("There seems to be an issue");
                     e.printStackTrace();

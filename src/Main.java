@@ -26,7 +26,7 @@ public class Main implements Runnable {
 
         Thread.sleep(1000);
 
-        init(frame.panel.getGraphics());
+        //init(frame.panel.getGraphics());
     }
 
     public static Color hex2Rgb(String colorStr) {

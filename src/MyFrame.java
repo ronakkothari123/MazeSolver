@@ -41,8 +41,6 @@ public class MyFrame extends JFrame{
 
         ImageIcon img = new ImageIcon("res/icon.png");
 
-
-
         this.setIconImage(img.getImage());
 
         this.setLocationRelativeTo(null);
